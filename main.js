@@ -48,7 +48,7 @@ const readline = require('readline').createInterface({
     function askWithdraw() {
       readline.question(`Saisissez le montant de votre retrait: `, function(withdraw) {
         withdraw = parseInt(withdraw);
-        rest = sold - (withdraw + overdraftAmount);
+        rest = sold - withdraw;
         if (overdraftAmount === 0) {
           if( sold < withdraw) {
             console.log(`Solde insuffisant`);
@@ -56,7 +56,7 @@ const readline = require('readline').createInterface({
           } else {
             console.log(`vous avez retiré ${withdraw} €`);
             console.log(`Solde restant: ${rest} €`);
-            if (rest > 0) {
+            if (rest > -overdraftAmount) {
               sold = rest;
               askWithdraw();
             } else {
@@ -71,7 +71,7 @@ const readline = require('readline').createInterface({
           } else {            
               console.log(`vous avez retiré ${withdraw} €`);
               console.log(`Solde restant: ${rest} €`);
-              if ( rest > 0) {
+              if ( rest > -overdraftAmount) {
                 askWithdraw();
               } else {
                 console.log("*** Algorithme terminé ***");
