@@ -9,42 +9,42 @@ h2 {
 }
 
 header {
-    background-color: #00468b; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    padding: 20px 0; /* Espacement interne */
+    background-color: #00468b; 
+    color: white; 
+    padding: 20px 0;
 }
 
 .header-content {
     max-width: 1200px;
-    margin: 0 auto; /* Centrer le contenu */
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Espace entre le titre et le menu */
+    justify-content: space-between;
     align-items: center;
 }
 
 header h1 {
-    margin-left: 20px; /* Espacement à gauche pour le titre */
+    margin-left: 20px; 
 }
 
 nav ul {
-    list-style-type: none; /* Enlève les puces */
-    display: flex; /* Affichage en ligne */
+    list-style-type: none; 
+    display: flex; 
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-right: 20px; /* Espacement entre les éléments du menu */
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: white; /* Couleur des liens */
-    text-decoration: none; /* Enlève le soulignement */
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Souligne au survol */
+    text-decoration: underline; 
 }
 
 form {
