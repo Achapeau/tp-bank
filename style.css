@@ -8,6 +8,45 @@ h2 {
     color: #333;
 }
 
+header {
+    background-color: #00468b; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 20px 0; /* Espacement interne */
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le contenu */
+    display: flex;
+    justify-content: space-between; /* Espace entre le titre et le menu */
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px; /* Espacement à gauche pour le titre */
+}
+
+nav ul {
+    list-style-type: none; /* Enlève les puces */
+    display: flex; /* Affichage en ligne */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px; /* Espacement entre les éléments du menu */
+}
+
+nav ul li a {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Enlève le soulignement */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Souligne au survol */
+}
+
 form {
     background-color: #fff;
     padding: 20px;
@@ -29,7 +68,7 @@ input[type="number"] {
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    box-sizing: border-box; /* Ajoutez cette propriété pour inclure le padding dans la largeur totale */
+    box-sizing: border-box; 
 }
 
 button {
