@@ -48,11 +48,44 @@ nav ul li a:hover {
 }
 
 .hero-banner {
-    background-image: url('assets/GTMBANK.jpg');
-    height: 400px; 
+    background: url('assets/herobanner.jpg') no-repeat center center; 
     background-size: cover;
-    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding to fit your design */
 }
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* If you want to position elements inside the hero banner */
+}
+
+.hero-title {
+    font-size: 3rem; /* Adjust the size as needed */
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #008cba; /* Change to match your design */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem; /* Adjust the size as needed */
+    border-radius: 5px; /* Optional: for rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #005f73; /* Darker shade for hover effect */
+}
+
 
 form {
     background-color: #fff;
@@ -90,4 +123,18 @@ button {
 
 button:hover {
     background-color: #003d82;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0; /* Espacement entre les lignes */
 }
