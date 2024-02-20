@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ouverture de compte chez GTM Bank</title>
+</head>
+<body>
+    <h2>Bienvenue chez GTM Bank</h2>
+    <form id="accountCreationForm">
+        <p>Voulez-vous avoir un découvert (o/n) ?</p>
+        <input type="text" id="overdraftOption" name="overdraftOption" required>
+        
+        <p>Montant du découvert autorisé (entre 100 et 2000 €) :</p>
+        <input type="number" id="overdraftAmount" name="overdraftAmount">
+        
+        <p>Montant à transférer pour l'ouverture du compte (minimum de 500 €) :</p>
+        <input type="number" id="initialDeposit" name="initialDeposit" required>
+        
+        <button type="submit">Soumettre</button>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
