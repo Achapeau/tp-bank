@@ -47,6 +47,13 @@ nav ul li a:hover {
     text-decoration: underline; 
 }
 
+.hero-banner {
+    background-image: url('assets/GTMBANK.jpg');
+    height: 400px; 
+    background-size: cover;
+    background-position: center;
+}
+
 form {
     background-color: #fff;
     padding: 20px;
