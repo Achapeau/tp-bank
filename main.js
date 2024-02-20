@@ -8,6 +8,7 @@ const readline = require('readline').createInterface({
   
   readline.question("Voulez-vous avoir un découvert (o/n) ? ", function(isOverdraft) {
     let overdraftAmount = 0;
+    let sold = 0;
   
     if (isOverdraft.toLowerCase() === 'o') {
       askOverdraftAmount();
@@ -32,6 +33,7 @@ const readline = require('readline').createInterface({
       readline.question("Entrez le montant à transférer pour l'ouverture du compte (minimum de 500 €): ", function(deposit) {
         deposit = parseInt(deposit);
         if (deposit >= 500) {
+          sold = deposit;
           console.log(`Solde (€): ${deposit}`);
           console.log(`Découvert (€): ${overdraftAmount}`);
           console.log("*** Algorithme terminé ***");
@@ -42,4 +44,16 @@ const readline = require('readline').createInterface({
         }
       });
     }
+
+    function askWithdraw() {
+      readline.question(`Saisissez le montant de votre retrait`), function(withdraw) {
+        withdraw = parseInt(withdraw)
+        if (overdraftAmount === 0) {
+          if( sold < withdraw) {
+            console.log(`Vous ne pouvez pas retirer plus que votre solde: ${sold} €`);
+          }
+        }
+      }
+    }
+
   });
