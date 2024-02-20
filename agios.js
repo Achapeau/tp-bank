@@ -1,22 +1,3 @@
-/*
-<input type="number" id="overdraftAmount" name="overdraftAmount" value=1320.00>
-        
-<p>Durée du découvert :</p>
-<input type="number" id="overdraftTime" name="overdraftTime" value=45.00>
-
-<p>Plafond du découvert autorisé :</p>
-<input type="number" id="authorizedOverdraftCeiling" name="authorizedOverdraftCeiling" value=1320.00>
-
-<p>Taux de découvert autorisé :</p>
-<input type="number" id="authorizedOverdraftRate" name="authorizedOverdraftRate" value=10.00>
-
-<p>Taux au-delà du plafond</p>
-<input type="number" id="ratesbeyondCeiling" name="ratesbeyondCeiling" value=10.00>
-
-<h3>Taux au-delà du plafond</h3>
-<div id="totalAmount" name="totalAmount">
-*/
-
 document.getElementById("overdraftAmount").addEventListener("change", calcul);
 document.getElementById("overdraftTime").addEventListener("change", calcul);
 document.getElementById("authorizedOverdraftCeiling").addEventListener("change", calcul);
